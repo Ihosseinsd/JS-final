@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>store</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+    <script src="./data.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h2>login svg</h2>
+      <h1>Welcome To Library</h1>
+      <h3>
+        Theme:
+        <button onclick="handleTheme('light')">Light</button>
+        <button onclick="handleTheme('dark')">Dark</button>
+      </h3>
+    </header>
+    <div id="search">
+      <input
+        onkeyup="handleSearch(event)"
+        type="text"
+        name="text"
+        id="text"
+        placeholder="search your item here"
+      />
+    </div>
+
+    <div id="root">
+      <div class="card is-loading">
+        <div class="image"></div>
+        <div class="content">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+    </div>
+    <div id="pagination"></div>
+  </body>
+</html>
+<img src="./image/1.jpg" alt="" srcset="">
