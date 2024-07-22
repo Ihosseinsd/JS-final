@@ -9,36 +9,35 @@
     <script src="data.js"></script>
   </head>
   <body>
-    <div class="container">
-      <header>
-        
-          <h1>Welcome to your Library</h1>
-          
-          <div class="shopping">
-              <img src="./shopping-bag-svgrepo-com.svg">
-              <span class="quantity">0</span>
-          </div>
-          
-          <div id="InputContainer">
-            <input
-              onkeyup="handleSearch(event)"
-              placeholder="Search..." id="input" class="input" name="text" type="text"
-            />
-          </div>
-          <button onclick="handleTheme('dark')">
-            <span class="shadow"></span>
-            <span class="edge"></span>
-            <span class="front text"> Dark
-            </span>
-          </button>
-          <button onclick="handleTheme('light')">
+    <nav class="navbar">
+      <div class="navdiv">
+        <div class="logo"><a href="#">Welcome to your Library</a> </div>
+        <div>
+          <input
+            onkeyup="handleSearch(event)"
+            placeholder="Search..." id="input" class="input" name="text" type="text"
+          />
+        </div>
+        <ul>
+          <button id="light" onclick="handleTheme('light')">
             <span class="shadow"></span>
             <span class="edge"></span>
             <span class="front text"> light
             </span>
           </button>
-      </header>
-
+          <button id="daark" onclick="handleTheme('dark')">
+            <span class="shadow"></span>
+            <span class="edge"></span>
+            <span class="front text"> Dark
+            </span>
+          </button>
+        </ul>
+        <div class="shopping">
+          <img src="./shopping-bag-svgrepo-com.svg">
+          <span class="quantity">0</span>
+        </div>
+      </div>
+    </nav>
       <div class="list">
         
       </div>
